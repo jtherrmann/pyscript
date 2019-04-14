@@ -3,10 +3,8 @@ from . import MultiShape
 
 class LayeredShapes(MultiShape):
 
-    def _get_postscript(self, center):
-        return "\n".join(
-            shape._get_postscript(center) for shape in self._shapes
-        )
+    def _get_each_component_postscript(self, center):
+        return (shape._get_postscript(center) for shape in self._shapes)
 
     def _get_width(self):
         return max((shape._get_width() for shape in self._shapes), default=0)
