@@ -1,10 +1,7 @@
-from . import Shape, Point
+from . import MultiShape, Point
 
 
-class HorizontalShapes(Shape):
-
-    def __init__(self, *shapes):
-        self._shapes = shapes
+class HorizontalShapes(MultiShape):
 
     def _get_postscript(self, center):
         shape_exports = []

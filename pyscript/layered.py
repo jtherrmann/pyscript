@@ -1,10 +1,7 @@
-from . import Shape
+from . import MultiShape
 
 
-class LayeredShapes(Shape):
-
-    def __init__(self, *shapes):
-        self._shapes = shapes
+class LayeredShapes(MultiShape):
 
     def _get_postscript(self, center):
         return "\n".join(
