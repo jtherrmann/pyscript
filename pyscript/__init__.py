@@ -8,7 +8,7 @@ from .square     import Square
 from .triangle   import Triangle
 from .scaled     import ScaledShape
 from .rotated    import RotatedShape
-from .multi      import MultiShape
+from .multi      import MultiShape, StackedShapes
 from .layered    import LayeredShapes
 from .vertical   import VerticalShapes
 from .horizontal import HorizontalShapes
