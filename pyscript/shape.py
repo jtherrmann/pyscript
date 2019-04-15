@@ -19,6 +19,12 @@ class Shape(ABC):
 
         return postscript_code + "showpage\n"
 
+    def _get_half_dimension(self, dimension_method):
+        if dimension_method not in (
+                self._get_width.__name__, self._get_height.__name__):
+            raise ValueError()
+        return getattr(self, dimension_method)() / 2
+
     @abstractmethod
     def _get_postscript(self, center):
         pass
