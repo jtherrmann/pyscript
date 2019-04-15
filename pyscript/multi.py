@@ -47,11 +47,11 @@ class StackedShapes(MultiShape):
             )
             variable_coord += half_shape_dimension
 
-    def _get_half_long_dimension(self):
-        return self._get_half_dimension(self._long_dimension_method)
-
     def _get_constant_coord(self, center):
         return getattr(center, self._constant_coord_name)
 
     def _get_variable_coord(self, center):
         return getattr(center, self._variable_coord_name)
+
+    def _get_half_long_dimension(self):
+        return self._get_half_dimension(self._long_dimension_method)
