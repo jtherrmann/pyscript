@@ -1,10 +1,11 @@
 # PyScript
 
-CS 372 Spring 2019\
-Software Construction\
-George Meier\
 Jake Herrmann\
-Laura Lundell
+Laura Lundell\
+George Meier
+
+CS 372: Software Construction\
+Spring 2019
 
 ## Introduction
 
